@@ -1,0 +1,31 @@
+:root {
+    --primary-color: #0D1B2A;
+    --secondary-color: #1B263B;
+    --accent1-color: #415A77;
+    --accent2-color: #778DA9;
+    --accent3-color: #E0E1DD;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-weight:200;
+}
+header {
+    background-color: var(--secondary-color);
+    color: var(--accent3-color);
+}
+
+header nav {
+    background-color: #415A77;
+}
+
+header nav a {
+    color: var(--accent3-color);
+    text-decoration: none;
+}
