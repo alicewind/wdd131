@@ -76,10 +76,11 @@ main p {
     margin-bottom: 10px;
 }
 
-.card header {
+.card h2 {
     background-color: var(--accent2-color);
     color: var(--primary-color);    
-    padding: 0.5rem;
+    padding: 1rem;
+    margin-top: 0;
     text-align: center;
     border-radius: 8px 8px 0 0;
 }
@@ -94,7 +95,7 @@ ul li {
     grid-template-rows: auto;
 }
 
-.card.about header{
+.card.about h2{
     grid-column: 1/4;
 }
 
