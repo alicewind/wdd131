@@ -4,43 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temples</title>
+    <meta name="description" content="Alice Wind Temples Page for WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Alice Wind">
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
-    <script src="scripts/temples.js" defer></script>    
+    <script src="scripts/temples.js" defer></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
     <header>
-        <p>Temple Album</p>
+        <p class="tagline">Temple Album</p>
         <nav>
-            <a href="">Home</a>
-            <a href="">Old</a>
-            <a href="">New</a>
-            <a href="">Large</a>
-            <a href="">Small</a>
+            <a id="menu" href="#"></a>
+            <ul class="navigation">
+                <li><a href="WDD131/">Home</a></li>
+                <li><a href="WDD131/">Old</a></li>
+                <li><a href="WDD131/">New</a></li>
+                <li><a href="WDD131/">Large</a></li>
+                <li><a href="WDD131/">Small</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <h1>Home</h1>
-        <figure>
-            <img src="images/medford_temple.webp" alt="">
-            <figcaption>Medford Oregon</figcaption>
-            <img src="images/barranquilla_colombia_temple.webp" alt="">
-            <figcaption>Barranquilla Columbia</figcaption>
-            <img src="images/rome_italy_temple.webp" alt="">
-            <figcaption>Rome Italy</figcaption>
-            <img src="images/hamilton_new_zealand_lds_temple.webp" alt="">
-            <figcaption>Hamilton New Zealand</figcaption>
-            <img src="images/coban_guatemala_temple.webp" alt="">
-            <figcaption>Coban Guatemala</figcaption>
-            <img src="images/quito_ecuador_temple.webp" alt="">
-            <figcaption>Quito Ecuador</figcaption>
-            <img src="images/star_valley_temples_wyoming.webp" alt="">
-            <figcaption>Star Valley Wyoming</figcaption>
-            <img src="images/fort_lauderdale_florida_temple.webp" alt="">
-            <figcaption>Fort Lauderdale Florida</figcaption>
-            <img src="images/orem_utah_temple.webp" alt="">
-            <figcaption>Orem Utah</figcaption>
-        </figure>
+        <section class="gallery">
+            <figure>
+                <img src="images/medford_temple.webp" alt="Medford">
+                <figcaption>Medford Oregon</figcaption>
+            </figure>
+            <figure>
+                <img src="images/barranquilla_colombia_temple.webp" alt="Barranquilla">
+                <figcaption>Barranquilla Columbia</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rome_italy_temple.webp" alt="Rome">
+                <figcaption>Rome Italy</figcaption>
+            </figure>
+            <figure>
+                <img src="images/hamilton_new_zealand_lds_temple.webp" alt="Hamilton">
+                <figcaption>Hamilton New Zealand</figcaption>
+            </figure>
+            <figure>
+                <img src="images/coban_guatemala_temple.webp" alt="Coban">
+                <figcaption>Coban Guatemala</figcaption>
+            </figure>
+            <figure>
+                <img src="images/quito_ecuador_temple.webp" alt="Quito">
+                <figcaption>Quito Ecuador</figcaption>
+            </figure>
+            <figure>
+                <img src="images/star_valley_temples_wyoming.webp" alt="Star Valley">
+                <figcaption>Star Valley Wyoming</figcaption>
+            </figure>
+            <figure>
+                <img src="images/fort_lauderdale_florida_temple.webp" alt="Fort Lauderdale">
+                <figcaption>Fort Lauderdale Florida</figcaption>
+            </figure>
+            <figure>
+                <img src="images/orem_utah_temple.webp" alt="Orem">
+                <figcaption>Orem Utah</figcaption>
+            </figure>
+        </section>
     </main>
     <footer>
         <p>&copy;<span id="currentyear"></span> &#10070; Alice Wind &#10070; Utah</p>
