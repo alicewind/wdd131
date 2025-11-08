@@ -32,6 +32,7 @@ header {
 
 header p {
     align-content: center;
+    padding-left: .3rem;
 }
 
 #menu {
@@ -61,7 +62,7 @@ header p {
 
 .navigation a {
     display: block;
-    padding: .75rem;
+    padding: .3rem;
     text-align: center;
     text-decoration: none;
     color: white;
