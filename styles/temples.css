@@ -104,7 +104,7 @@ h1 {
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns : 1fr;
     place-items: center;
     gap: 1rem;
 }

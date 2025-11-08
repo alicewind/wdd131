@@ -1,6 +1,6 @@
 @media screen and (min-width: 550px) {
 
-    .navigation {
+    nav .navigation {
         display: flex;
         font-size: large;
         justify-content: space-around;
