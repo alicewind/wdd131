@@ -1,0 +1,12 @@
+@media screen and (min-width: 600px) {
+
+
+    h2 {
+        background-color: var(--accent2-color);
+        color: var(--accent1-color);
+        max-width: 200px;
+    }
+
+}
+
+
