@@ -33,10 +33,14 @@ header {
     border-bottom: solid .75rem var(--secondary-color);
 }
 
-.info {
-    padding: 1rem;
+.data-info, .weather-info {
+    padding: .5rem;
     text-align: center;
+    background-color: #ffffffb9;
+    
 }
+
+
 
 h2 {    
     text-align: center;
@@ -55,14 +59,27 @@ h2 {
     padding-right: 10px;    
 }
 
-.value {
+.value, .temp-value, .wind-value, .wind-chill-value {
     justify-self: start;
+}
+
+.temp-value::after {
+    content: "°C";
+}
+
+.wind-value::after {
+    content: " km/h";
+}
+
+.wind-chill-value::after {
+    content: "°C";
 }
 
 footer {
     color: var(--accent1-color);
     text-align: center;
     background-color: var(--secondary-color);
-    font-weight: 400;
-    padding: .5rem;
+    font-weight: 500;
+    font-size: x-large;
+    padding: .25rem;
 }

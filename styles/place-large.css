@@ -1,12 +1,42 @@
 @media screen and (min-width: 600px) {
+    main {
+        display: grid;
+    }
 
+    .data-info, .weather-info {
+        display: block;
+        max-width: fit-content;
+        font-size: smaller;
+        padding: 0 1rem 1rem;
+    }
+
+    
+    .data-info {
+        position: absolute;
+        top: 14rem;
+        left: 3rem;
+    }
+
+    .weather-info {
+        position: absolute;
+        right: 3rem;
+        bottom: 14rem;
+    }
+
+    .weather-info img {
+        display: none;
+    }
 
     h2 {
         background-color: var(--accent2-color);
         color: var(--accent1-color);
         max-width: 200px;
+        text-align: left;
     }
-
+           
+    .weather-info h2::after {
+        content: " 🌤️";
+    }   
 }
 
 
