@@ -1,0 +1,34 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid black;    
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: .85rem;
+}
+
+thead th, tbody td {
+    text-align: center;
+}
+
+thead {
+    background-color: black;
+    color: white;
+    font-size: larger;
+}
+
+th, td {
+    padding: 7px 15px;
+    border: 1px solid black;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(204, 198, 198);
+}
