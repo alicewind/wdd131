@@ -96,24 +96,54 @@ const temples = [
     },
 ]; 
 
-const templeContainer = document.querySelector("#temple");
+// const templeContainer = document.querySelector("#temple");
+
+createTempleCard();
     
 function createTempleCard(temple) {
-    const card = document.createElement("div");
-    card.classList.add("temple-card");
+    temples.forEach(temple => {
+        let card = document.createElement("section");
+        let name = document.createElement("h3");
+        let location = document.createElement("p");
+        let dedication = document.createElement("p");
+        let area = document.createElement("p");
+        let img = document.createElement("img");
 
-    card.innerHTML = `
-        <h2>${temple.templeName}</h2>
-        <p><strong>LOCATION:</strong> ${temple.location}</p>
-        <p><strong>DEDICATED:</strong> ${temple.dedicated}</p>
-        <p><strong>SIZE:</strong> ${temple.area} sq ft</p>
-        <img src="${temple.imageUrl}" alt="${temple.templeName} Temple" loading="lazy" width="400" height="250">
-    `;
-    return card;
-    }
+        name.textContent = temple.templeName;
+        location.innerHTML = `<span class="label">LOCATION:</SPAN> ${temple.location}`;
+        dedication.innerHTML = `<span class="label">DEDICATED:</SPAN> ${temple.dedicated}`;
+        area.innerHTML = `<span class="label">SIZE:</SPAN> ${temple.area} sq ft`;
 
-temples.forEach(temple => {
-    const card = createTempleCard(temple);
-    templeContainer.appendChild(card);
-});
-    // Add more temple objects here...
+        img.setAttribute("src", temple.imageUrl);
+        img.setAttribute("alt", `${temple.templeName} Temple`);
+        img.setAttribute("loading", "lazy")
+
+        card.appendChild(name);
+        card.appendChild(location);
+        card.appendChild(dedication);
+        card.appendChild(area);
+        card.appendChild(img);
+
+        document.querySelector(".gallery").appendChild(card);
+    });
+
+
+
+    // const card = document.createElement("div");
+    // card.classList.add("temple-card");
+
+    // card.innerHTML = `
+    //     <h2>${temple.templeName}</h2>
+    //     <p><strong>LOCATION:</strong> ${temple.location}</p>
+    //     <p><strong>DEDICATED:</strong> ${temple.dedicated}</p>
+    //     <p><strong>SIZE:</strong> ${temple.area} sq ft</p>
+    //     <img src="${temple.imageUrl}" alt="${temple.templeName} Temple" loading="lazy" width="400" height="250">
+    // `;
+    // return card;
+}
+
+// temples.forEach(temple => {
+//     const card = createTempleCard(temple);
+//     templeContainer.appendChild(card);
+// });
+    
