@@ -70,30 +70,50 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
     },
-    {
-        templeName: "Madrid Spain",
-        location: "Madrid, Spain",
-        dedicated: "1999, March, 21",
-        area: 45800,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/madrid-spain-temple/madrid-spain-temple-54292.jpg"
-    },
-    {
-        templeName: "Papeete Tahiti",
-        location: "Commune de Papeete, Tahiti",
-        dedicated: "1983, October, 29",
-        area: 12150,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/papeete-tahiti-temple/papeete-tahiti-temple-28604.jpg"
-    },
-    {
-        templeName: "Helsinki Finland",
-        location: "Espoo, Finland",
-        dedicated: "2006, October, 22",
-        area: 16350,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/helsinki-finland-temple/helsinki-finland-temple-22169.jpg"
-    },
+    // {
+    //     templeName: "Madrid Spain",
+    //     location: "Madrid, Spain",
+    //     dedicated: "1999, March, 21",
+    //     area: 45800,
+    //     imageUrl:
+    //         "https://churchofjesuschristtemples.org/assets/img/temples/madrid-spain-temple/madrid-spain-temple-54292.jpg"
+    // },
+    // {
+    //     templeName: "Papeete Tahiti",
+    //     location: "Commune de Papeete, Tahiti",
+    //     dedicated: "1983, October, 29",
+    //     area: 12150,
+    //     imageUrl:
+    //         "https://churchofjesuschristtemples.org/assets/img/temples/papeete-tahiti-temple/papeete-tahiti-temple-28604.jpg"
+    // },
+    // {
+    //     templeName: "Helsinki Finland",
+    //     location: "Espoo, Finland",
+    //     dedicated: "2006, October, 22",
+    //     area: 16350,
+    //     imageUrl:
+    //         "https://churchofjesuschristtemples.org/assets/img/temples/helsinki-finland-temple/helsinki-finland-temple-22169.jpg"
+    // },
+]; 
+
+const templeContainer = document.querySelector("#temple");
     
+function createTempleCard(temple) {
+    const card = document.createElement("div");
+    card.classList.add("temple-card");
+
+    card.innerHTML = `
+        <h2>${temple.templeName}</h2>
+        <p><strong>Location:</strong> ${temple.location}</p>
+        <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+        <p><strong>Size:</strong> ${temple.area} sq ft</p>
+        <img src="${temple.imageUrl}" alt="${temple.templeName} Temple">
+    `;
+    return card;
+    }
+
+temples.forEach(temple => {
+    const card = createTempleCard(temple);
+    templeContainer.appendChild(card);
+});
     // Add more temple objects here...
-];

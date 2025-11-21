@@ -106,14 +106,32 @@ h1 {
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     place-items: center;
     gap: 1rem;
+    padding: 1.5rem;
 }
 
-figcaption {
-    text-align: center;
+#temple {
+    
+    
 }
+
+.temple-card {
+    background-color: #d7e3f3;
+    padding: 1.5rem;
+    border: solid 1px var(--accent2-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    
+}
+
+#temple img {
+    margin: 20px;
+    box-shadow: 0 4px 15px ;
+}
+
+
 
 footer {
     color: white;
