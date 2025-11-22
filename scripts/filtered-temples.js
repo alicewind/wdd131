@@ -106,6 +106,7 @@ const smallLink = document.querySelector("#small");
 const title = document.querySelector(".title");
 
 homeLink.addEventListener("click", () => {
+    title.textContent = "Home";
     createTempleCard(temples);
 });
 
