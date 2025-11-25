@@ -1,0 +1,67 @@
+
+.colors {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.colors h2 {
+    grid-column: 1/6;
+
+}
+
+.colors #dark-royal-blue {
+    display: block;
+    background-color: #2A2965;
+    color: white;
+    padding: 2rem;
+}
+
+.colors #medium-blue {
+    display: block;
+    background-color: #269bb5;
+    color: white;
+    padding: 2rem;
+}
+
+.colors #yellow {
+    display: block;
+    background-color: #ffe600;
+    color: black;
+    padding: 2rem;
+}
+
+.colors #light-gray {
+    display: block;
+    background-color: #bfbfbf;
+    color: black;
+    padding: 2rem;
+}
+
+.colors #coral {
+    display: block;
+    background-color: #ec644f;
+    color: white;
+    padding: 2rem;
+}
+
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.typography-bn {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18pt;
+}
+
+/* <weight>: Use a value from 100 to 900
+<uniquifier>: Use a unique and descriptive class name */
+body, .typography-rw {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
