@@ -1,0 +1,20 @@
+
+
+header {
+    background-color: #70a4d1;
+    max-width: 600px;
+}
+
+
+
+
+
+footer {
+    color: var(--accent1-color);
+    text-align: center;
+    background-color: #70a4d1;
+    font-weight: 500;
+    font-size: large;
+    padding: .25rem;
+    max-width: 600px;
+}
