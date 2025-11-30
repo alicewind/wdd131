@@ -20,29 +20,31 @@
     </header>
     <main>
         <form method="get" action="review.html" class="pr1">
-            <label>Product Name
+            <label class="product">Product Name
                 <select id="productName" name="prodname" required>
                 <option value="">Select a Product</option>
                 </select>
             </label>
 
-            <div>Overall Rating</div>
-            <div class="ratings">
-                <label><input type="radio" name="rating" value="one" required>&star;</label>
-                <label><input type="radio" name="rating" value="two" required>&star;&star;</label>
-                <label><input type="radio" name="rating" value="three" required>&star;&star;&star;</label>
-                <label><input type="radio" name="rating" value="four" required>&star;&star;&star;&star;</label>
-                <label><input type="radio" name="rating" value="five" required>&star;&star;&star;&star;&star;</label>
-            </div>
+            <label class="ratings">Overall Rating
+                <div>
+                    <label><input type="radio" name="rating" value="one" required>&star;</label>
+                    <label><input type="radio" name="rating" value="two" required>&star;&star;</label>
+                    <label><input type="radio" name="rating" value="three" required>&star;&star;&star;</label>
+                    <label><input type="radio" name="rating" value="four" required>&star;&star;&star;&star;</label>
+                    <label><input type="radio" name="rating" value="five" required>&star;&star;&star;&star;&star;</label>
+                </div>
+            </label>
 
             <label>Date of Installation<input type="date" name="installationDate" required></label>
 
-            <div>Which features did you find useful in the product?</div>
+            <label class="features">Which features did you find useful in the product?
             <div>(Check all that apply)</div>
             <label><input type="checkbox" id="features" name="durability" value="yes">Durability</label>
             <label><input type="checkbox" id="features" name="ease" value="yes">Ease of Use</label>
             <label><input type="checkbox" id="features" name="performance" value="yes">Performance</label>
             <label><input type="checkbox" id="features" name="design" value="yes">Design</label>
+            </label>
 
             <label class="text-field">Written Review <span class="optional">(Optional)</span></label>
             <textarea id="review" name="review"></textarea>

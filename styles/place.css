@@ -36,11 +36,8 @@ header {
 .data-info, .weather-info {
     padding: .5rem;
     text-align: center;
-    background-color: #ffffffb9;
-    
+    background-color: #ffffffb9;    
 }
-
-
 
 h2 {    
     text-align: center;
