@@ -58,10 +58,21 @@ h1 {
 .features {
     margin-bottom: 1.5rem;
 }
-.ratings div{
+.pr1 .rating-group {
     display: flex;
     gap: 10px;
     margin-bottom: 1.5rem;
+}
+
+.pr1 input[type="radio"] {
+    width: 25px;
+    height: 25px;
+}
+.pr1 .rating-group label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
 }
 
 .pr1 input[type="submit"] {
