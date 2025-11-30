@@ -62,17 +62,15 @@ h1 {
     display: flex;
     gap: 10px;
     margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .pr1 input[type="radio"] {
     width: 25px;
     height: 25px;
-}
-.pr1 .rating-group label {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-
+    
 }
 
 .pr1 input[type="submit"] {
