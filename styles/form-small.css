@@ -1,0 +1,13 @@
+@media screen and (max-width: 400px) {
+
+    .pr1 .rating-group {
+        display: block;
+    }
+
+    .pr1 input[type="text"],
+    .pr1 input[type="textarea"],
+    .pr1 input[type="date"],
+    .pr1 select {
+        max-width: 85%;
+    }
+}
