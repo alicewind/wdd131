@@ -28,20 +28,25 @@ const products = [
 
 const productSelect = document.querySelector("#productName");
 
-products.forEach(product => {
-    const option = document.createElement("option");
-    option.value = product.id;
-    option.textContent = product.name;
-    productSelect.appendChild(option);
-});
+if (productSelect) {
+    products.forEach(product => {
+        const option = document.createElement("option");
+        option.value = product.id;
+        option.textContent = product.name;
+        productSelect.appendChild(option);
+    });
+}
 
 const reviewsDisplay = document.querySelector(".reviews");
 
 let numReviews = Number(window.localStorage.getItem("reviews-ls"));
-if (numReviews !== 0) {
-    reviewsDisplay.textContent = numReviews;
-} else {
-    reviewsDisplay.textContent = 'You have no reviews';
+
+if (reviewsDisplay) {
+    if (numReviews !== 0) {
+        reviewsDisplay.textContent = numReviews;
+    } else {
+        reviewsDisplay.textContent = 'You have no reviews';
+    }
 }
 numReviews++;
 localStorage.setItem("reviews-ls", numReviews);
