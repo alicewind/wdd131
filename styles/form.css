@@ -8,37 +8,31 @@ header {
     text-align: center;
 }
 
-main {
-    background-color: #dfd0df;
-    max-width: 600px;
-    font-weight: 500;
-}
-
-div {
-    padding: 1.5rem;
-}
-.product {
-    padding-top: 1.5rem;
-}
-.product #productName {
-    font-family: montserrat;
-}
-.pr1 {
-    padding-left: 15px;
-}
-
 h1 {
     padding: 1rem;
     color: white;
     font-weight: 500;
 }
 
-.pr1 label {
-    display: block;   
+main {
+    background-color: #dfd0df;
+    max-width: 600px;
+    font-weight: 500;
 }
 
-.pr1 div {
+.pr1 {
     padding-left: 15px;
+}
+
+.pr1 .product {
+    padding-top: 1.5rem;
+}
+.pr1 .product #productName {
+    font-family: montserrat;
+}
+
+.pr1 label {
+    display: block;   
 }
 
 .pr1 input[type="text"],
@@ -55,34 +49,39 @@ h1 {
     font-family: montserrat;
 }
 
-.features {
-    margin-bottom: 1.5rem;
-}
 .pr1 .rating-group {
-    display: flex;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px;
     margin-bottom: 1.5rem;
     align-items: center;
     cursor: pointer;
+    max-width: 400px;
+}
+
+.rating-group label {
+    grid-row: 1/2;
 }
 
 .pr1 input[type="radio"] {
     width: 25px;
     height: 25px;
-    
 }
 
-.pr1 input[type="submit"] {
-    border: solid 1px #bdb6b6;
-    border-radius: 5px;
-    font-family: montserrat;
-    font-weight: 500;
-    width: 96%;
-    max-width: 600px;
-    padding: .8rem;
-    font-size: larger;
-    margin-bottom: 15px;
-    background-color: #a1a1d2;
+.features-group {
+    display: grid;
+    grid-template-columns: .1fr 1fr;
+    margin-bottom: 1.5rem;
+}
+
+.features-group label {
+    align-self: center;
+}
+
+.pr1 input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-left: 1rem;
 }
 
 .text-field {
@@ -105,6 +104,19 @@ textarea {
     border-radius: 5px;
     font-family: montserrat;
     margin-bottom: 1.5rem;
+}
+
+.pr1 input[type="submit"] {
+    border: solid 1px #bdb6b6;
+    border-radius: 5px;
+    font-family: montserrat;
+    font-weight: 500;
+    width: 96%;
+    max-width: 600px;
+    padding: .8rem;
+    font-size: larger;
+    margin-bottom: 15px;
+    background-color: #a1a1d2;
 }
 
 footer {
