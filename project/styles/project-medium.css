@@ -1,0 +1,37 @@
+@media screen and (min-width: 475px) {
+
+
+    #menu {
+        display: none;
+        color: black;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
