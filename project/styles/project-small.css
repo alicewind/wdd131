@@ -13,11 +13,12 @@
 
 header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 1000px;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1500px;
     margin: .5rem auto;
     border-bottom: 15px solid var(--primary-color);
-    padding: .75rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
     background-color: var(--background-color);
     color: white;
     font-size: large;
@@ -25,7 +26,7 @@ header {
 
 header img {
     align-content: center;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     padding-top: .5rem;
 }
 
@@ -67,7 +68,7 @@ header img {
     font-weight: 600;
     transition: 0.5s;
     font-size: 1.5rem;
-   
+    white-space: nowrap;
 }
 
 .navigation a:hover,
@@ -89,8 +90,25 @@ header img {
     display: none;
 }
 
+.hero {
+    text-align: center;
+}
+
 h1 {
     font-family: Bebas Neue;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    position: absolute;
+    margin-top: 1.5rem;
+    left: 28%;
+    transform: translateX(-40%);  
+    text-align: center;
+    color: white;
+}
+
+.hero img{
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    
 }
