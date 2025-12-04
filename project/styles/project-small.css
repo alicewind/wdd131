@@ -112,3 +112,23 @@ h1 {
     height: auto;
     
 }
+
+main {
+    font-family: Raleway;
+}
+
+.statements {
+    display: flex;
+    column-gap: 1.5rem;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.statements img{
+    padding: .5rem;
+    margin: 1px;
+    border: solid 1px var(--background-color);
+    align-self: flex-start;
+}
+

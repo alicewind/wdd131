@@ -10,3 +10,9 @@ h1 {
 .navigation {
     gap: 1.5rem;
 }
+
+.statements {  
+    flex-wrap: nowrap;
+    width: 96%;
+    max-width: 1500px; 
+}
