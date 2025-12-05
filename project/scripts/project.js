@@ -70,7 +70,7 @@ const boardMembers = [
     {
         memberName: "Alice Wind",
         position: "President",
-        biography: "Alice fell in love with the Great Salt Lake’s peacefulness and beauty after taking rowing lessons with GSLR in 2018. Spending time on the water has become a treasured part of her week. A retired engineer, she also enjoys road biking, hiking, reading, watching thunderstorms, and planning National Park trips with her husband Steve. Alice also cherishes time spent with her five daughters and four grandchildren.",
+        biography: "Alice discovered the beauty and peacefulness of the Great Salt Lake after taking rowing lessons with GSLR in 2018. Spending time on the water has become a treasured part of her week. A retired engineer, she also enjoys road biking, hiking, reading, watching thunderstorms, and planning National Park trips with her husband, Steve. Alice also cherishes time spent with her five daughters and four grandchildren.",
         image: "images/alice.webp"
     },
     {

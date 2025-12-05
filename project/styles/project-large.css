@@ -1,27 +1,36 @@
 @media screen and (min-width: 850px) {
 
-h1 {
-    font-size: 3.5rem;
-    padding-left: 5rem;
+    h1 {
+        font-size: 3.5rem;
+        padding-left: 5rem;
+    }
+
+    .navigation {
+        gap: 1.5rem;
+    }
+
+    .statements {  
+        flex-wrap: nowrap;
+        width: 96%;
+        max-width: 1500px; 
+    }   
+
+    .cf1 input[type="submit"] {
+        margin-left: 3rem;
+    }
+
+    
 }
 
-}
+@media screen and (min-width: 1150px) {
+    .profiles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
 
-.navigation {
-    gap: 1.5rem;
+    .profiles section {
+        grid-template-columns: minmax(160px, 200px) 1fr;
+    }
+    
 }
-
-.statements {  
-    flex-wrap: nowrap;
-    width: 96%;
-    max-width: 1500px; 
-}
-
-/*this is showing up on small page - need to figure out*/
-/* .cf1 fieldset {
-    margin-left: 2.5rem;
-}
-
-.cf1 input[type="submit"] {
-    margin-left: 3rem;
-} */
