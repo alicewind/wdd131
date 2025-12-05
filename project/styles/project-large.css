@@ -16,3 +16,12 @@ h1 {
     width: 96%;
     max-width: 1500px; 
 }
+
+/*this is showing up on small page - need to figure out*/
+/* .cf1 fieldset {
+    margin-left: 2.5rem;
+}
+
+.cf1 input[type="submit"] {
+    margin-left: 3rem;
+} */

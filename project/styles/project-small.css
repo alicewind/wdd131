@@ -132,3 +132,72 @@ main {
     align-self: flex-start;
 }
 
+.cf1 fieldset {
+    margin: 2rem 0 .5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 0 .5rem;
+    max-width: 700px;;
+}
+
+.cf1 legend {
+    color: var(--primary-color);
+    font-size: x-large;
+}
+
+.cf1 label {
+    display: block;
+    padding: 1.5rem 0 0;
+    font-weight: 500;
+}
+
+.cf1 div {
+    padding-top: 1.5rem;
+    font-weight: 500;
+
+}
+
+.cf1 input[type="text"],
+.cf1 input[type="email"],
+.cf1 input[type="tel"],
+.cf1 #message,
+.cf1 select {
+    display: block;
+    border: solid 1px darkgray;
+    border-radius: 5px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+    background-color: #eee;
+}
+
+.cf1 input[type="checkbox"] {
+    margin-right: 6px;
+    width: 20px;
+    height: 20px;
+}
+
+.cf1 select {
+    font-size: 1rem;
+    color: rgb(74, 72, 72);
+}
+
+.cf1 #message {
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+}
+
+.cf1 input[type="submit"] {
+    padding: 1rem;
+    width: 96%;
+    max-width: 400px;
+    background-color: #ec644f;
+    color: white;
+    font-family: Raleway;
+    font-size: x-large;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}

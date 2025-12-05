@@ -21,18 +21,40 @@
             <a id="menu" href="#"></a>
             <ul class="navigation">
                 <li><a href="project.html" id="home">Home</a></li>
-                <li><a href="#" id="contact">Contact Us</a></li>
+                <li><a href="#" id="contact">About Us</a></li>
                 <li><a href="lessons.html" id="lessons">Learn to Row</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Contact Us</h1>
+        <h1>Meet Our Team</h1>
         <div class="hero">
             <picture>
                 <img src="images/single-sculler-hero.webp" alt="single" >
             </picture>
         </div>
+        <form method="get" action="contact-response.html" class="cf1">
+            <fieldset>
+                <legend>Contact Us</legend>
+                <label>Full Name*<input type="text" name="fullname" required></label>
+                <label>Email*<input type="email" name="email" placeholder="someone@example.com" required></label>
+                <label>Phone Number<input type="tel" name="phone" placeholder="1235551234"></label>
+                <div>Topics of Interest (check all that apply):</div>
+                <label><input type="checkbox" name="membership" value="yes"> Membership Information</label>
+                <label><input type="checkbox" name="guest" value="yes"> Guest Rowing</label>
+                <label><input type="checkbox" name="events" value="yes"> Events</label>
+                <label><input type="checkbox" name="lessons" value="yes"> Lessons</label>
+                <label class="session" for="lessonSession">If you are interested in signing up for lessons, please indicate your preferred session.
+                    <select id="lessonSession" name="session">
+                        <option value="" disabled selected>Lesson Session</option>
+                    </select>
+                </label>
+                <label class="text-field" for="message">Leave a Message</label>
+                <textarea id="message" name="message"></textarea>
+            </fieldset>
+            <input type="submit" value="Send Information">
+        </form>
+        
     </main>
     <footer>
 
