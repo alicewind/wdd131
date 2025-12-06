@@ -15,42 +15,42 @@ window.addEventListener('resize', () => {
 
 const lessons = [
     {
-        session: "Session 1",
+        id: "Session 1",
         dates: "April 6-15",
         level: "Beginner"
     },
     {
-        session: "Session 2",
+        id: "Session 2",
         dates: "April 20-29",
         level: "Beginner"
     },
     {
-        session: "Session 3",
+        id: "Session 3",
         dates: "May 4-13",
         level: "Beginner"
     },
     {
-        session: "Session 4",
+        id: "Session 4",
         dates: "May 18-27",
         level: "Advanced"
     },
     {
-        session: "Session 5",
+        id: "Session 5",
         dates: "June 1-10",
         level: "Beginner"
     },
     {
-        session: "Session 6",
+        id: "Session 6",
         dates: "June 15-24",
         level: "Beginner"
     },
     {
-        session: "Session 7",
+        id: "Session 7",
         dates: "July 6-15",
         level: "Beginner"
     },
     {
-        session: "Session 8",
+        id: "Session 8",
         dates: "July 20-29",
         level: "Advanced"
     }
@@ -158,7 +158,7 @@ function loadLessonsTable(lessons) {
     lessons.forEach(lesson => {
         const row = document.createElement("tr");
         row.innerHTML = `
-            <td>${lesson.session}</td>
+            <td>${lesson.id}</td>
             <td>${lesson.dates}</td>
             <td>${lesson.level}</td>
             `;
