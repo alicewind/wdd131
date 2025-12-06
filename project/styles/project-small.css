@@ -251,6 +251,10 @@ main {
     box-shadow: 1px 1px 4px #999;
 }
 
+.form-response {
+    padding-left: 1.5rem;    
+}
+
 .team, 
 .learn-to-row {
     width: 90%;
@@ -304,17 +308,56 @@ footer {
     background-color: var(--background-color);
     border-top: solid 15px var(--primary-color);
     font-weight: 400;
-    padding: .5rem;
+    padding: 1rem;
     font-family: Raleway;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    /* margin-top: 1.5rem; */
+    max-width: 1470px;
+    margin: 1.5rem auto;
 }   
 
-.sociallinks a {
-    color: white;
-    padding: 1rem;
+#references {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 0 2rem;
+}
+
+.sociallinks a {    
+    padding: 0 1rem;
 }
 
 .sociallinks {
-    display: flex;
-    justify-content: flex-end;
     text-decoration: none;
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid black;
+    border-collapse: collapse;
+    width: 70%;    
+}
+
+thead th,
+tbody td {
+    text-align: center;
+}
+
+thead {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: large;
+}
+
+th,
+td {
+    padding: 7px 15px;
+    border: 1px solid darkgray;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(204, 198, 198);
 }

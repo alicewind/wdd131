@@ -15,48 +15,48 @@ window.addEventListener('resize', () => {
 
 const lessons = [
     {
-        id: "Session 1",
+        session: "Session 1",
         dates: "April 6-15",
         level: "Beginner"
     },
     {
-        id: "Session 2",
+        session: "Session 2",
         dates: "April 20-29",
         level: "Beginner"
     },
     {
-        id: "Session 3",
+        session: "Session 3",
         dates: "May 4-13",
         level: "Beginner"
     },
     {
-        id: "Session 4",
+        session: "Session 4",
         dates: "May 18-27",
         level: "Advanced"
     },
     {
-        id: "Session 5",
+        session: "Session 5",
         dates: "June 1-10",
         level: "Beginner"
     },
     {
-        id: "Session 6",
+        session: "Session 6",
         dates: "June 15-24",
         level: "Beginner"
     },
     {
-        id: "Session 7",
+        session: "Session 7",
         dates: "July 6-15",
         level: "Beginner"
     },
     {
-        id: "Session 8",
+        session: "Session 8",
         dates: "July 20-29",
         level: "Advanced"
     }
 ];
 
-const lessonsSelect = document.querySelector("#lessonSession");
+const lessonsSelect = document.querySelector("#lesson-session");
 
 if (lessonsSelect) {
     lessons.forEach(lesson => {
@@ -66,7 +66,20 @@ if (lessonsSelect) {
     })
 }
 
+const lessonDropdown = document.querySelector("#lesson-session");
 
+if (lessonDropdown) {
+    lessonDropdown.addEventListener("change", () => {
+        localStorage.setItem("session-choice", lessonDropdown.value);
+    });
+}
+
+const sessionResult = document.querySelector(".session-choice");
+
+if (sessionResult) {
+    const storedChoice = localStorage.getItem("session-choice");
+    sessionResult.textContent = storedChoice || "No session requested";
+}
 
 const boardMembers = [
     {
@@ -108,10 +121,13 @@ const boardMembers = [
 ];
 
 function createBoardCard(boardMembers) {
+    const profilesContainer = document.querySelector(".profiles");
+    if (!profilesContainer) return;
+
     document.querySelector(".profiles").innerHTML = "";
     boardMembers.forEach(boardMember => {
         let card = document.createElement("section");
-        let header = document.createElement("h3");        
+        let header = document.createElement("h3");
         let biography = document.createElement("p");
         let img = document.createElement("img");
 
@@ -122,16 +138,33 @@ function createBoardCard(boardMembers) {
         img.setAttribute("alt", `${boardMember.memberName}`);
         img.setAttribute("loading", "lazy");
         img.setAttribute("width", "145");
-        
+
         card.appendChild(header);
         card.appendChild(biography);
         card.appendChild(img);
 
-        document.querySelector(".profiles").appendChild(card);
-    })
+        profilesContainer.appendChild(card);
+    });
 }
 
 createBoardCard(boardMembers);
 
+function loadLessonsTable(lessons) {
+    const tableBody = document.getElementById("table-body");
 
+    if (!tableBody) return;
+    tableBody.innerHTML = "";
+
+    lessons.forEach(lesson => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+            <td>${lesson.session}</td>
+            <td>${lesson.dates}</td>
+            <td>${lesson.level}</td>
+            `;
+        tableBody.appendChild(row);
+    })
+}
+
+loadLessonsTable(lessons);
 
