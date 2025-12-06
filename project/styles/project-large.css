@@ -9,11 +9,32 @@
         gap: 1.5rem;
     }
 
-    .statements {  
+    .statements { 
+
+        display: flex;
+        column-gap: 1.5rem;
         flex-wrap: nowrap;
-        width: 96%;
+        width: 90%;
         max-width: 1500px; 
-    }   
+    }  
+    
+    .connect {
+        display: flex;
+        gap: 1.5rem;
+        width: 890px;
+        justify-content: center;
+        align-content: baseline;
+        margin-bottom: 1.5rem;
+    } 
+
+    .connect section {
+        padding-bottom: 1.5rem;
+    }
+    
+    .lesson {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
 
     .cf1 input[type="submit"] {
         margin-left: 3rem;

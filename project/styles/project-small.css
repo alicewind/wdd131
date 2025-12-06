@@ -118,18 +118,67 @@ main {
 }
 
 .statements {
-    display: flex;
-    column-gap: 1.5rem;
-    width: 100%;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: minmax(140px, 180px) 1fr;
+    max-width: 90%;
+    border-top: solid 1px darkgray;
+    border-bottom: solid 1px darkgray;
     justify-content: space-around;
-}
+    margin: 1rem auto;
+    row-gap: .8rem;
+    padding-top: .8rem;
+    padding-bottom: .3rem;
+}   
 
 .statements img{
-    padding: .5rem;
-    margin: 1px;
+    padding: .5rem;    
     border: solid 1px var(--background-color);
-    align-self: flex-start;
+    align-self: center;
+
+}
+
+.connect {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    width: 440px;
+}
+
+.connect section {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;    
+    padding-top: 1.5rem;
+
+}
+.lesson {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.lesson button, 
+.contact button {
+    position: relative;
+    padding: 1rem 1.5rem;
+    font-family: Raleway;
+    bottom: 220px;
+    left: 90px;
+    background-color: rgba(255, 255, 255, 0.414);
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 0px 2px 8px #999;
+    margin: -30px;
+}
+
+.lesson button:hover,
+.lesson button:active, 
+.contact button:hover,
+.contact button:active {
+    background-color: #ec644f;
+    color: white;
+    font-weight: 700;
 }
 
 .cf1 fieldset {
@@ -202,13 +251,15 @@ main {
     box-shadow: 1px 1px 4px #999;
 }
 
-.team {
+.team, 
+.learn-to-row {
     width: 90%;
     max-width: 1500px;
     margin: 0 auto;
 }
 
-.team .about h2{
+.team .about h2,
+.lesson-text h2{
     text-align: center;
     padding: .5rem;
     border-top: solid 1px darkgray;
@@ -216,7 +267,8 @@ main {
     font-size: 2rem;
 }
 
-.team .about p {
+.team .about p, 
+.lesson-text p {
     padding: 1rem;
 }
 
@@ -244,4 +296,25 @@ main {
 
 .board h2 {
     text-align: center;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    background-color: var(--background-color);
+    border-top: solid 15px var(--primary-color);
+    font-weight: 400;
+    padding: .5rem;
+    font-family: Raleway;
+}   
+
+.sociallinks a {
+    color: white;
+    padding: 1rem;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
 }

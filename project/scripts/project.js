@@ -66,6 +66,8 @@ if (lessonsSelect) {
     })
 }
 
+
+
 const boardMembers = [
     {
         memberName: "Alice Wind",
@@ -130,4 +132,6 @@ function createBoardCard(boardMembers) {
 }
 
 createBoardCard(boardMembers);
+
+
 
